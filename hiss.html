@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>บทนำ</title>
+    <title>ประวัติ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@ cursor:url("jatu.png"),auto; height:100vh;}
          padding: 30px;
          text-align:center;
          border-radius: 10px}
-   section{background: linear-gradient(hotpink,skyblue,white);
+   section{background: linear-gradient(limegreen,yellow,white);
            padding: 15px;
            margin: 20px auto;
            width: 70%;
@@ -34,6 +34,23 @@ cursor:url("jatu.png"),auto; height:100vh;}
 p{text-indent: 2em;}
       
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
+      img.hover{animation:glowcolors 1.2s infinite alternate; }
+      @keyframes glowcolors{
+    0%{box-shadow: 0 0 20px hotpink;}
+    25%{box-shadow: 0 0 20px blue;}
+    50%{box-shadow: 0 0 20px green;}
+    75%{box-shadow: 0 0 20px yellow;}
+    100%{box-shadow: 0 0 20px red;}
+      }
+
+      .blink-bg{
+        animation: binkbg 1s infinite alternate;
+        padding:3px 6px
+      }
+      @keyframes blinkbg {
+        0%{background: yellow;}
+      100%{background: orange;}
+      }
     </style>
   </head>
 <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4X97vQRHygaG3_iRS8C9bfj-sgIa5AZo5Q&s">
@@ -62,3 +79,15 @@ p{text-indent: 2em;}
     ❤ ประเพณีชาวจตุรมิตร<br><br>
     ❤ ผู้จัดทำ
   </div>
+  <section>
+    <center>
+      <h1><mark>ประวัติ</mark></h1>
+
+    </center>
+    <br>
+    <P>การแข่งขันฟุตบอลประเพณีจตุรมิตรสามัคคีเป็นความคิดริเริ่มของนายโปร่ง ส่งแสงเติม อาจารย์ใหญ่โรงเรียนสวนกุหลาบวิทยาลัย กับนายอารีย์ เสมประสาท อาจารย์ใหญ่โรงเรียนกรุงเทพคริสเตียนวิทยาลัย ทั้งสองท่านได้มาขอความร่วมมือจากนายบุญอวบ บูรณะบุตร อาจารย์ใหญ่โรงเรียนเทพศิรินทร์ และนายบรรณา ชโนดม อาจารย์ใหญ่โรงเรียนอัสสัมชัญ ให้ร่วมกันจัดการแข่งขันฟุตบอลระหว่างสี่สถาบัน เพื่อเชื่อมความสามัคคีของครูอาจารย์และนักเรียนทุกฝ่าย ซึ่งอาจารย์ทั้งสี่มีความเห็นพ้องกัน</P>
+<center></center>
+    <span class="blink-bg">รูปบุคคลสำคัญผู้ริเริ่มงานจตุรมิตร>
+  </span>
+  </section>
+
